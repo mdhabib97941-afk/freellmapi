@@ -1,0 +1,15 @@
+name: Keep Render App Alive
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render URL
+        run: |
+          curl -s https://freellmapi-sv5j.onrender.com/v1 > /dev/null
+          echo "✅ Pinged freellmapi-sv5j.onrender.com to keep it awake!"
