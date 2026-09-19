@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Ping Render URL
         run: |
-          curl -s https://freellmapi-sv5j.onrender.com/v1 > /dev/null
-          echo "✅ Pinged freellmapi-sv5j.onrender.com to keep it awake!"
+          curl -s https://freellmapi-5ybc.onrender.com//v1 > /dev/null
+          echo "✅ Pinged freellmapi-5ybc.onrender.com/ to keep it awake!"
